@@ -1,0 +1,39 @@
+# ==============================
+# InvoicePro Environment Config
+# ==============================
+
+# Server
+NODE_ENV=development
+PORT=5000
+BASE_URL=http://localhost:5000
+
+# MongoDB Atlas
+MONGO_URI= mongodb_srv_link_here
+
+# JWT
+JWT_SECRET=your_jwt_secret_here
+JWT_EXPIRES_IN=7d
+
+# Admin Bootstrap (used only if no admin user exists)
+ADMIN_NAME=Admin
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=examplepassword
+
+# Nodemailer (SMTP)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_email_app_password
+EMAIL_FROM="InvoicePro <no-reply@invoicepro.com>"
+
+# Company Info (shown on invoice PDF)
+COMPANY_NAME=InvoicePro Pvt Ltd
+COMPANY_ADDRESS=123 Business Street, Ludhiana, Punjab, India
+COMPANY_GST=22ABCDE1234F1Z5
+COMPANY_EMAIL=billing@invoicepro.com
+COMPANY_PHONE=+91-1234567890
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX=200
